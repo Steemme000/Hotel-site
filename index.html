@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERONA HOTEL</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img class="opening_picture1" src="images/logo1.png" alt="Logo_verona" />
+
+      <div class="header_flex">
+        <section>
+          <ul class="contacts">
+            <li class="contacts_element">+7(989)0835555</li>
+            <li class="contacts_element">+7(861)4160014</li>
+            <li class="contacts_element">vip.verona5555@mail.ru</li>
+            <li>
+              <button type="button" class="contacts_button" id="myBtn">
+                Забронировать
+              </button>
+            </li>
+          </ul>
+          <div></div>
+        </section>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="wrapper_form">
+              <div class="form">
+                <form id="myForm" method="post" action="#" class="form_body">
+                  <h1 class="form_title uppercase_letters">Оставьте ваши данные:</h1>
+                  <p class="form_undertitle">
+                    В ближайшее время с вами свяжется наш менеджер
+                  </p>
+
+                  <div class="form_item">
+                    <label for="Name" class="form_label">Имя:</label>
+                    <input type="text" id="Name" name="name" class="form_input">
+                  </div>
+
+                  <div class="form_item">
+                    <label for="Phone" class="form_label">*Телефон:</label>
+                    <input type="tel" id="Phone" name="phone" class="form_input _req">
+                  </div>
+
+                  <div class="form_item">
+                    <label for="Email" class="form_label">*Email:</label>
+                    <input type="text" id="Email" name="email" class="form_input _req _email">
+                  </div>
+
+                  <div class="form_item">
+                    <label for="People" class="form_label">Количество человек:</label>
+                    <input type="text" id="People" name="people" class="form_input">
+                  </div>
+
+                  <div class="form_item">
+                    <label for="DateEnter" class="form_label">Дата заезда:</label>
+                    <input type="date" id="DateEnter" name="dateEnter" class="form_input" min="2023-05-23" max="2023-09-30">
+                  </div>
+
+                  <div class="form_item">
+                    <label for="DateExit" class="form_label">Дата выезда:</label>
+                    <input type="date" id="DateExit" name="dateExit" class="form_input" min="2023-05-23" max="2023-09-30">
+                  </div>
+                  
+                  <div class="form_item">
+                    <div class="checkbox">
+                      <input checked type="checkbox" id="Agreement" name="agreement" class="checkbox_input _req">
+                    <label for="Agreement" class="checkbox_label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="agreement.html">Условиями</a>*</span></label>
+                    
+                  </div>
+                </div>
+
+                <button class="more_button" type="submit">Отправить
+                </button>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="#Rooms" class="navigation_element">Номера</a></li>
+            <li><a href="#About" class="navigation_element">О нас</a></li>
+            <li><a href="#Services" class="navigation_element">Услуги</a></li>
+            <li>
+              <a href="#Gallery" class="navigation_element">Фотогалерея</a>
+            </li>
+            <li>
+              <a href="#Order" class="navigation_element">Бронирование</a>
+            </li>
+            <li><a href="#Costs" class="navigation_element">Цены</a></li>
+            <li><a href="#Contacts" class="navigation_element">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <div class="opening_wrapper">
+            <div class="opening_wrapper_for_gif">
+              <img
+                src="images/header.jpg"
+                alt="Logo_verona"
+                class="opening_img"
+                width="100%"
+                height="50%"
+              />
+            </div>
+            <a href="#Arrowdown"><div class="arrow"></div></a>
+          </div>
+        </article>
+      </section>
+
+      <section id="Arrowdown">
+        <article class="about" id="About">
+          <h1 class="uppercase_letters about_name">
+            Насладитесь каждым моментом своего отдыха в отеле
+            <strong class="about_name_verona">«Верона»</strong>
+          </h1>
+          <p class="about_text">
+            Гостевой дом "Верона" расположен в центре Архипо-Осиповки, 5-7 минут
+            спокойным шагом до моря, набережной и посёлка, где расположены:
+            супермаркет, автостанция, салоны сотовой связи, банки и банкоматы. К
+            услугам гостей современные номера, оборудованные всеми необходимыми
+            удобствами. Просторная территория с великолепными видами,
+            ландшафтным дизайном, шезлонгами и местами для отдыха, бассейн.
+          </p>
+          <br />
+          <p class="about_text">
+            «Верона» дарит своим гостям прекрасную возможность насладиться
+            каждым моментом своего отдыха, для которого созданы все условия.
+          </p>
+        </article>
+      </section>
+
+      <section id="Rooms">
+        <h1 class="uppercase_letters twopeople_number_header_text">
+          Наши номера
+        </h1>
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider">
+              <div class="slider_line">
+                <img
+                  src="images/2-х местный/IMG_9071.jpg"
+                  alt="2people_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9069.jpg"
+                  alt="2people_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9079.jpg"
+                  alt="2people_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9081.jpg"
+                  alt="2people_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9108.jpg"
+                  alt="2people_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9110.jpg"
+                  alt="2people_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9111.jpg"
+                  alt="2people_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9124.jpg"
+                  alt="2people_number8"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9126.jpg"
+                  alt="2people_number9"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270297.jpg"
+                  alt="2people_number10"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270308.jpg"
+                  alt="2people_number11"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270346.jpg"
+                  alt="2people_number12"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270360.jpg"
+                  alt="2people_number13"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270361.jpg"
+                  alt="2people_number14"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/P1270362.jpg"
+                  alt="2people_number15"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev">Назад</button>
+              <button class="slider_next">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">
+              Двухместный <br />стандартный номер
+            </h2>
+            <p class="texts">1-3 человека (с учетом доп. места)</p>
+            <h3 class="texts texts_cost">от 3000 р</h3>
+            <ul class="texts">
+              <li>Туалет</li>
+              <li>Балкон</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a
+              href="./twopeopleroom.html"
+              target="_blank"
+              title="В новой вкладке"
+              ><button type="button" class="more_button" >Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn2">Забронировать</button>
+          </div>
+        </article>
+
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider2">
+              <div class="slider_line2">
+                <img
+                  src="images/3-х/IMG_9085.jpeg"
+                  alt="3people_number00"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9086.jpeg"
+                  alt="3people_number0"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9087.jpg"
+                  alt="3people_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9089.jpg"
+                  alt="3people_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9090.jpg"
+                  alt="3people_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9093.jpg"
+                  alt="3people_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9095.jpg"
+                  alt="3people_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9102.jpg"
+                  alt="3people_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9104.jpg"
+                  alt="3people_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9105.jpg"
+                  alt="3people_number8"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х/IMG_9106.jpg"
+                  alt="3people_number9"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev2">Назад</button>
+              <button class="slider_next2">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">
+              Трёхместный <br />стандартный номер
+            </h2>
+            <p class="texts">1-4 человека (с учетом доп. места)</p>
+            <h3 class="texts texts_cost">от 3500 р</h3>
+            <ul class="texts">
+              <li>Туалет</li>
+              <li>Балкон</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a
+              href="./threepeopleroom.html"
+              target="_blank"
+              title="В новой вкладке"
+              ><button type="button" class="more_button">Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn3">Забронировать</button>
+          </div>
+        </article>
+
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider5">
+              <div class="slider_line5">
+                <img
+                  src="images/панорама б/IMG_9036.jpeg"
+                  alt="twopeoplepan_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9037.jpeg"
+                  alt="twopeoplepan_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9023.jpg"
+                  alt="twopeoplepan_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9024.jpg"
+                  alt="twopeoplepan_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9025.jpg"
+                  alt="twopeoplepan_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9027.jpg"
+                  alt="twopeoplepan_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9028.jpg"
+                  alt="twopeoplepan_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9029.jpg"
+                  alt="twopeoplepan_number8"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9030.jpg"
+                  alt="twopeoplepan_number9"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9034.jpg"
+                  alt="twopeoplepan_number10"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/панорама б/IMG_9035.jpg"
+                  alt="twopeoplepan_number11"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev5">Назад</button>
+              <button class="slider_next5">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">
+              Двухместный<br />
+              Панорамный номер
+            </h2>
+            <p class="texts">1-3 человека (с учетом доп. места)</p>
+            <h3 class="texts texts_cost">от 3000 р</h3>
+            <ul class="texts">
+              <li>Туалет</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a
+              href="./twopeoplepanroom.html"
+              target="_blank"
+              title="В новой вкладке"
+              ><button type="button" class="more_button">Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn4">Забронировать</button>
+          </div>
+        </article>
+
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider3">
+              <div class="slider_line3">
+                <img
+                  src="images/3-х местный панорамный/IMG_9008.jpg"
+                  alt="3peoplepan_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9009.jpg"
+                  alt="3peoplepan_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9011.jpg"
+                  alt="3peoplepan_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9012.jpg"
+                  alt="3peoplepan_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9013.jpg"
+                  alt="3peoplepan_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9014.jpg"
+                  alt="3peoplepan_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9015.jpg"
+                  alt="3peoplepan_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9016.jpg"
+                  alt="3peoplepan_number8"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9018.jpg"
+                  alt="3peoplepan_number9"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9019.jpg"
+                  alt="3peoplepan_number10"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9037.jpg"
+                  alt="3peoplepan_number11"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9039.jpg"
+                  alt="3peoplepan_number12"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9040.jpg"
+                  alt="3peoplepan_number13"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9041.jpg"
+                  alt="3peoplepan_number14"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9045.jpg"
+                  alt="3peoplepan_number15"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9046.jpg"
+                  alt="3peoplepan_number16"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9047.jpg"
+                  alt="3peoplepan_number17"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9050.jpg"
+                  alt="3peoplepan_number18"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9051.jpg"
+                  alt="3peoplepan_number19"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/3-х местный панорамный/IMG_9053.jpg"
+                  alt="3peoplepan_number20"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev3">Назад</button>
+              <button class="slider_next3">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">
+              Трёхместный <br />Панорамный номер
+            </h2>
+            <p class="texts">1-4 человека (с учетом доп. места)</p>
+            <h3 class="texts texts_cost">от 4000 р</h3>
+            <ul class="texts">
+              <li>Туалет</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a
+              href="./threepeoplepanroom.html"
+              target="_blank"
+              title="В новой вкладке"
+              ><button type="button" class="more_button">Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn5">Забронировать</button>
+          </div>
+        </article>
+
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider4">
+              <div class="slider_line4">
+                <img
+                  src="images/мансарда/IMG_9058.jpg"
+                  alt="Mansarda_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9055.jpg"
+                  alt="Mansarda_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9059.jpg"
+                  alt="Mansarda_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9060.jpg"
+                  alt="Mansarda_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9061.jpg"
+                  alt="Mansarda_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9062.jpg"
+                  alt="Mansarda_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9064.jpg"
+                  alt="Mansarda_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/мансарда/IMG_9065.jpg"
+                  alt="Mansarda_number8"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev4">Назад</button>
+              <button class="slider_next4">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">Мансарда</h2>
+            <p class="texts">1-3 человека (с учетом доп. места)</p>
+            <h3 class="texts texts_cost">от 2000 р</h3>
+            <ul class="texts">
+              <li>Туалет</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a href="./mansarda.html" target="_blank" title="В новой вкладке"
+              ><button type="button" class="more_button">Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn6">Забронировать</button>
+          </div>
+        </article>
+
+        <article class="twopeople_number">
+          <div class="container">
+            <div class="slider6">
+              <div class="slider_line6">
+                <img
+                  src="images/Новая папка/P1270154.jpg"
+                  alt="Cottage_number1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270157.jpg"
+                  alt="Cottage_number2"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270183-2.jpg"
+                  alt="Cottage_number3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270185.jpg"
+                  alt="Cottage_number4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270202.jpg"
+                  alt="Cottage_number5"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270214.jpg"
+                  alt="Cottage_number6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270218.jpg"
+                  alt="Cottage_number7"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/Новая папка/P1270219.jpg"
+                  alt="Cottage_number8"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+            <div class="twopeople_number_buttons">
+              <button class="slider_prev6">Назад</button>
+              <button class="slider_next6">Вперед</button>
+            </div>
+          </div>
+
+          <div class="twopeople_number_description">
+            <h2 class="uppercase_letters twopeople_number_header">Коттедж</h2>
+            <p class="texts">1-5 человека</p>
+            <h3 class="texts texts_cost">от 6500 р</h3>
+            <ul class="texts">
+              <li>Кухня</li>
+              <li>Туалет</li>
+              <li>Душ</li>
+              <li>Фен</li>
+              <li>Сплит-система</li>
+              <li>Wi-Fi</li>
+              <li>Телевизор</li>
+              <li>Холодильник</li>
+              <li>Утюг</li>
+            </ul>
+            <p class="texts">Стоимость зависит от сезона</p>
+            <a href="./cotage.html" target="_blank" title="В новой вкладке"
+              ><button type="button" class="more_button">Подробнее</button></a
+            >
+            <button type="button" class="contacts_button" id="myBtn7">Забронировать</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="tables" id="Costs">
+        <div style="overflow-x: auto">
+          <table>
+            <caption class="uppercase_letters">
+              Прайс-лист
+            </caption>
+            <thead>
+              <tr>
+                <th>Тип номера</th>
+                <th>Мест</th>
+                <th>23.05-31.05</th>
+                <th>01.06-30.06</th>
+                <th>01.07-31.07</th>
+                <th>01.08-31.08</th>
+                <th>01.09-30.09</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="room_left">Стандарт 2-х местный без балкона</td>
+                <td>2 + 500 р за доп. место</td>
+                <td>2800 руб</td>
+                <td>3200 руб</td>
+                <td>5200 руб</td>
+                <td>5200 руб</td>
+                <td>4000 руб</td>
+              </tr>
+              <tr>
+                <td class="room_left">Стандарт 2-х местный</td>
+                <td>2 + 500 р за доп. место</td>
+                <td>3000 руб</td>
+                <td>3500 руб</td>
+                <td>5700 руб</td>
+                <td>5700 руб</td>
+                <td>4200 руб</td>
+              </tr>
+              <tr>
+                <td class="room_left">Стандарт 3-х местный с балконом</td>
+                <td>3 + 500 р за доп. место</td>
+                <td>3500 руб</td>
+                <td>4500 руб</td>
+                <td>7200 руб</td>
+                <td>7200 руб</td>
+                <td>5200 руб</td>
+              </tr>
+              <tr>
+                <td class="room_left">Панорама 2-х местный</td>
+                <td>2 + 500 р за доп.место</td>
+                <td>3000 руб</td>
+                <td>3500 руб</td>
+                <td>5700 руб</td>
+                <td>5700 руб</td>
+                <td>4200 руб</td>
+              </tr>
+              <tr>
+                <td class="room_left">Панорама 3-х местная</td>
+                <td>3 + 500 р за доп.место</td>
+                <td>4000 руб</td>
+                <td>4500 руб</td>
+                <td>7200 руб</td>
+                <td>7200 руб</td>
+                <td>5200 руб</td>
+              </tr>
+              <tr>
+                <td class="room_left">Мансарда</td>
+                <td>2 + 500 р за доп. место</td>
+                <td>2000 руб</td>
+                <td>3000 руб</td>
+                <td>4200 руб</td>
+                <td>4200 руб</td>
+                <td>3000 руб</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="room_left">Коттедж</td>
+                <td>5</td>
+                <td>6500 руб</td>
+                <td>7500 руб</td>
+                <td>13000 руб</td>
+                <td>13000 руб</td>
+                <td>8000 руб</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section id="Gallery">
+        <h1 class="uppercase_letters twopeople_number_header_text">
+          Фотогалерея
+        </h1>
+        <div class="container">
+          <div class="buttons_on_sides">
+            <button class="slider_prev7">
+              <img
+                src="images/arrow left.svg"
+                alt="arrow_slider"
+                class="arrow_slider_left"
+              />
+            </button>
+
+            <div class="slider7">
+              <div class="slider_line7">
+                <img
+                  src="images/фотогалерея/IMG_9106.jpg"
+                  alt="Gal1"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9130.jpg"
+                  alt="Gal3"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9132.jpg"
+                  alt="Gal4"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9140.jpg"
+                  alt="Gal5"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/IMG_9142.jpg"
+                  alt="Gal6"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9143.jpg"
+                  alt="Gal7"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/IMG_9146.jpg"
+                  alt="Gal8"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9149.jpg"
+                  alt="Gal9"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/IMG_9150.jpg"
+                  alt="Gal10"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9153.jpg"
+                  alt="Gal11"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/IMG_9154.jpg"
+                  alt="Gal12"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/IMG_9159.jpg"
+                  alt="Gal13"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/img_9402-img_9404_1.jpg"
+                  alt="Gal14"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/img_9405-img_9407_1.jpg"
+                  alt="Gal15"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/img_9420-img_9422_1.jpg"
+                  alt="Gal16"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/img_9426-img_9428_1.jpg"
+                  alt="Gal17"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/img_9430-img_9432_1.jpg"
+                  alt="Gal18"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/фотогалерея/img_9433-img_9435_1.jpg"
+                  alt="Gal19"
+                  class="slider_image_size"
+                /><img
+                  src="images/фотогалерея/img_9437-img_9439_1.jpg"
+                  alt="Gal20"
+                  class="slider_image_size"
+                />
+                <img
+                  src="images/2-х местный/IMG_9069.jpg"
+                  alt="2people_number2"
+                  class="slider_image_size"
+                />
+              </div>
+            </div>
+
+            <button class="slider_next7">
+              <img
+                src="images/arrow right.svg"
+                alt="arrow_slider"
+                class="arrow_slider_right"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Services">
+        <h1 class="uppercase_letters twopeople_number_header_text">Услуги</h1>
+        <ul class="services_list">
+          <div class="services_column">
+            <li class="services_item">
+              <img
+                src="images/pool_icon.svg"
+                alt="Pool.svg"
+                class="services_img"
+              />
+              <div>
+                <h1>Открытый бассейн</h1>
+                <p>Для гостей отеля</p>
+              </div>
+            </li>
+
+            <li class="services_item">
+              <img
+                src="images/wifi_icon.svg"
+                alt="Wifi.svg"
+                class="services_img"
+              />
+              <div>
+                <h1>Wi-Fi</h1>
+                <p>Бесплатный интернет</p>
+              </div>
+            </li>
+          </div>
+          <div class="services_column">
+            <li class="services_item">
+              <img
+                src="images/parking_icon.svg"
+                alt="Parking.svg"
+                class="services_img"
+              />
+              <div>
+                <h1>Парковка</h1>
+                <p>
+                  Гостям нашего отеля доступна<br />
+                  автостоянка
+                </p>
+              </div>
+            </li>
+
+            <li class="services_item">
+              <img
+                src="images/transfer_icon.svg"
+                alt="Transfer.svg"
+                class="services_img"
+              />
+              <div>
+                <h1>Трансфер</h1>
+                <p>
+                  Встреча на ж/д вокзале <br />или в аэропорту за доп. плату
+                </p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+
+      <section id="Order">
+        <article>
+          <div class="order_background">
+            <img src="images/IMG_9132.jpg" alt="beck_order"
+            width="100%"
+            class="order_img">
+            <h1 class="uppercase_letters order_header">Забронируйте номер</h1>
+            <button type="button" class="contacts_button order_button" id="myBtn8">
+              Забронировать
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section id="Contacts">
+        <article class="contacts_text">
+          <h1 class="uppercase_letters order_header1 contacts_header">
+            г. Геленджик, п. Архипо-Осиповка,<br />
+            пер. Джубгский, д.2
+          </h1>
+          <div class="contacts_phones">
+            <p>Телефоны:</p>
+            <p>+7(989)0835555;</p>
+            <p>+7(861)4160014</p>
+          </div>
+          <p class="contacts_addresses">Email: vip.verona5555@mail.ru</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaad4c27aad2f651c219e6bbff53020b7a900fd35eb564fe8a4f8e229dd9e271e&amp;source=constructor"
+          width="1920"
+          height="400"
+        ></iframe>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
